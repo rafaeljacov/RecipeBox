@@ -11,6 +11,14 @@
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
+.main-category button {
+    transform: translateY(-1.25em);
+}
+
 footer #copyright {
     font-size: 0.7rem;
 }
+
+footer .nav-item {
+    font-size: 0.8em;
+};
