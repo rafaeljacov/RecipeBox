@@ -2,6 +2,10 @@
     font-size: 1.6rem;
 }
 
+body {
+    margin: 0;
+}
+
 .featured-recipe {
     background: rgba( 255, 255, 255, 0.2 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
@@ -11,8 +15,49 @@
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
+.main-category, #sub-category a {
+    text-decoration: none;
+}
+
+.main-category button, #sub-category p, .main-search::placeholder, .search-btn, .card .btn, .card-title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
 .main-category button {
     transform: translateY(-1.25em);
+    display: block;
+    margin: 0 auto;
+    width: max(10rem, 60%)
+}
+
+.main-search {
+    padding-left: 2.2em !important;
+}
+
+.main-search::placeholder {
+    animation: marquee 5s linear;
+}
+
+#sub-category img {
+    margin: 1em 0 0.5em;
+}
+
+.search-btn {
+    width: min(14rem, 90%);
+    font-size: 0.75rem !important;
+}
+
+.card {
+    max-width: 23rem;
+}
+
+form button:disabled {
+    top: 12%;
+}
+
+.recommended a {
+    width: 8rem;
 }
 
 footer #copyright {
@@ -22,3 +67,20 @@ footer #copyright {
 footer .nav-item {
     font-size: 0.8em;
 };
+
+
+@keyframes marquee {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* @media(max-width: 776px) { */
+/*     .main-search::placeholder { */
+/*                 animation: marquee 5s linear infinite; */
+/*      } */
+/* } */
