@@ -1,0 +1,54 @@
+.top-rated svg {
+    width: clamp(45px, 5%, 2.5rem);
+    transform: translateY(-20%);
+}
+
+.top-rated {
+    flex: 3;
+    background: whitesmoke;
+}
+
+.top-rated h3 {
+    font-size: clamp(23px, 4vw, 2em);
+    font-weight: bold;
+}
+
+.top-rated .recipes {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    min-width: 100%;
+    margin: 0 auto;
+}
+
+.top-rated .recipe-item {
+    background-image: url("https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?auto=compress&cs=tinysrgb&w=1600");
+    background-size: cover;
+    border: 0.2em solid black;
+}
+
+.top-rated .recipe-body {
+    padding: 1.5em 1.2em;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.top-rated .recipe-body h4 {
+    color: white;
+}
+
+.top-rated .recipe-desc {
+    font-size: clamp(16px, 2vw, 0.8em);
+    color: white;
+    text-align: justify;
+    width: 90%;
+}
+
+.top-rated .buttons {
+    display: flex;
+    gap: 0.7em;
+}
+
+.buttons button {
+    font-size: clamp(14px, 1.5vw, 0.8em);
+}
+
