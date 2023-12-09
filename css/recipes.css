@@ -1,3 +1,142 @@
 :root {
     font-size: 1.6rem;
+    --primary: #FCEA6F;
+    --primary-dim: #AAA26D;
+    --seconday: #88FCC4;
+    --gradient:
+}
+
+.hero-section h1 {
+    transform: translateY(57%);
+    font-size: clamp(60px, 15vw, 4.5em);
+}
+
+.main-search {
+    padding-left: 2.2em !important;
+}
+
+.hero-section button, .main-search::placeholder, .top-rated h3, .buttons button {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+form button:disabled {
+    top: 15%;
+}
+
+main {
+    gap: 2rem;
+}   
+
+main svg {
+    width: clamp(45px, 5%, 2.5rem);
+    transform: translateY(-20%);
+}
+
+main .top-rated {
+    flex: 3;
+    background: whitesmoke;
+}
+
+main .top-rated h3 {
+    font-size: clamp(23px, 4vw, 2em);
+    font-weight: bold;
+}
+
+main .recipes {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    min-width: 100%;
+    margin: 0 auto;
+}
+
+main .recipe-item {
+    background-image: url("https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?auto=compress&cs=tinysrgb&w=1600");
+    background-size: cover;
+    border: 0.2em solid black;
+}
+
+main .recipe-body {
+    padding: 1.5em 1.2em;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+main .recipe-body h4 {
+    color: white;
+}
+
+main .recipe-desc {
+    font-size: clamp(16px, 2vw, 0.8em);
+    color: white;
+    text-align: justify;
+    width: 90%;
+}
+
+main .buttons {
+    display: flex;
+    gap: 0.7em;
+}
+
+.buttons button {
+    font-size: clamp(14px, 1.5vw, 0.8em);
+}
+
+.sidebar {
+    flex: 1;
+    background: whitesmoke;
+}
+
+.sidebar {
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.sidebar :is(h5, li) {
+    text-transform: capitalize;
+    transition: 0.27s ease;
+    list-style-type: none;
+    width: max-content;
+}
+
+.sidebar h5 {
+    font-weight: bold;
+    font-size: clamp(26px, 8vw, 1.5em);
+}
+
+.sidebar li:hover {
+    transform: scale(110%);
+}
+
+.sidebar li a {
+    color: black;
+    font-size: clamp(26px, 5vw, 1.3em);
+    text-decoration: none;
+}
+
+.sidebar #spacer {
+    flex-grow: 1;
+}
+
+.sidebar .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-height: 500px;
+    background-color: lightgray;
+    gap: 0.6em;
+}
+
+.sidebar .menu button {
+    text-transform: uppercase;
+}
+
+footer #copyright {
+    font-size: clamp(15px, 1vw, 0.7rem);
+}
+
+footer .nav-item {
+    font-size: 0.8em;
 }
