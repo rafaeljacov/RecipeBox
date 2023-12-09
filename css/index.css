@@ -55,11 +55,3 @@ body {
 form button:disabled {
     top: 12%;
 }
-
-footer #copyright {
-    font-size: 0.7rem;
-}
-
-footer .nav-item {
-    font-size: 0.8em;
-}

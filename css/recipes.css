@@ -132,11 +132,3 @@ main .buttons {
 .sidebar .menu button {
     text-transform: uppercase;
 }
-
-footer #copyright {
-    font-size: clamp(15px, 1vw, 0.7rem);
-}
-
-footer .nav-item {
-    font-size: 0.8em;
-}
