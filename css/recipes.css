@@ -15,7 +15,7 @@
     padding-left: 2.2em !important;
 }
 
-.hero-section button, .main-search::placeholder, .top-rated h3, .buttons button {
+.hero-section button, .main-search::placeholder, .top-rated h3, .share h3, .buttons button {
     text-transform: uppercase;
     text-align: center;
 }

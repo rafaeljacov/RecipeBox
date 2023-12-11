@@ -1,0 +1,66 @@
+.share {
+    flex: 3;
+    background: whitesmoke;
+}
+
+.share h3 {
+    font-size: clamp(23px, 4vw, 1.6em);
+    font-weight: bold;
+}
+
+.share #img-getter {
+    background-color: lightgray;
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.share .d-flex {
+    flex-direction: column;
+}
+
+.share .form-fillup {
+    flex: 3;
+}
+
+.form-fillup input {
+    width: 90%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 0.08em solid black;
+    text-align: center;
+    margin: 0 2em;
+    padding: 0.5em;
+    font-size: 1.3em;
+}
+
+.form-fillup input::placeholder {
+    text-transform: uppercase;
+}
+
+.form-fillup .textboxes {
+    height: 82%;
+    display: flex;
+}
+
+.form-fillup textarea {
+    resize: none;
+    border: none;
+    flex: 1;
+}
+
+.form-fillup textarea:nth-child(1) {
+    border-right: 1px solid black;
+}
+
+.form-fillup textarea:nth-child(2) {
+    border-left: 1px solid black;
+}
+
+.form-fillup button {
+    display: block;
+    margin: 1em auto 0;
+}

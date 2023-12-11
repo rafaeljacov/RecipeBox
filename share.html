@@ -4,9 +4,24 @@
         <title>Share My Recipe</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/share.css" rel="stylesheet">
     </head>
     <body>
-        <button type="button" class="btn btn-secondary">My button</button> 
+        <form id="swap" onsubmit="return false" class="share rounded-2 p-4">
+            <h3>share your personal recipe</h3> 
+            <div class="d-flex w-100 h-100">
+                <div id="img-getter" class="text-center p-4">
+                    <label for="file" class="btn btn-secondary">insert dish photo here</label>
+                    <input id="file" class="d-none" type="file" name="get-image" accept="image/jpeg, image/png, image/webp" value="">
+                </div>
+                <div class="form-fillup">
+                    <input type="text" autocomplete="off" name="dish-name" placeholder="dish or recipe name" value=""> 
+                    <div class="textboxes mt-2">
+                        <textarea id="ingredients" rows="" cols=""></textarea>
+                        <textarea id="procedure" rows="" cols=""></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-secondary">share</button>
+                </div>
+            </div>
+        </form>
     </body>
 </html>
