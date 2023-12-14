@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Share My Recipe</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
-    <body>
-        <form id="swap" onsubmit="return false" class="share rounded-2 p-4">
-            <h3>share your personal recipe</h3> 
-            <div class="d-flex w-100 h-100">
-                <div id="img-getter" class="text-center p-4">
-                    <label for="file" class="btn btn-secondary">insert dish photo here</label>
-                    <input id="file" class="d-none" type="file" name="get-image" accept="image/jpeg, image/png, image/webp" value="">
-                </div>
-                <div class="form-fillup">
-                    <input type="text" autocomplete="off" name="dish-name" placeholder="dish or recipe name" value=""> 
-                    <div class="textboxes mt-2">
-                        <textarea id="ingredients" rows="" cols=""></textarea>
-                        <textarea id="procedure" rows="" cols=""></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-secondary">share</button>
-                </div>
+
+<head>
+    <title>Share My Recipe</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <form id="swap" onsubmit="return false" class="share rounded-2 p-4">
+        <h3>share your personal recipe</h3>
+        <div class="d-flex w-100 h-100">
+            <div id="img-getter" class="text-center p-4 mt-3">
+                <label for="file" class="btn btn-secondary">insert dish photo here</label>
+                <input id="file" class="d-none" type="file" name="get-image" accept="image/jpeg, image/png, image/webp"
+                    value="">
             </div>
-        </form>
-    </body>
+            <div class="form-fillup">
+                <input type="text" autocomplete="off" name="dish-name" placeholder="dish or recipe name" value="">
+                <h4 class="mt-4 bg-secondary rounded-1 p-2">ingredients and procedures</h4>
+                <textarea class="container-fluid py-1 mt-1 rounded-1" rows="" cols=""></textarea>
+                <button type="submit" class="btn btn-secondary">share</button>
+            </div>
+        </div>
+    </form>
+    <script src="share.js"></script>
+</body>
+
 </html>

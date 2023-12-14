@@ -20,6 +20,10 @@
     text-align: center;
 }
 
+.search-btn {
+    letter-spacing: 0.07em;
+}
+
 form button:disabled {
     top: 15%;
 }
@@ -77,4 +81,5 @@ main {
 
 .sidebar .menu button {
     text-transform: uppercase;
+    font-weight: bold;
 }

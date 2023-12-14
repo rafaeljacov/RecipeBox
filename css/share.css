@@ -17,6 +17,11 @@
     align-items: center;
 }
 
+#img-getter label {
+    text-transform: uppercase;
+    font-size: clamp(0.6em,2vw, 1.8em);
+}
+
 .share .d-flex {
     flex-direction: column;
 }
@@ -25,42 +30,45 @@
     flex: 3;
 }
 
-.form-fillup input {
-    width: 90%;
+.form-fillup input[name="dish-name"] {
+    display: block;
+    width: 100%;
     border: none;
     outline: none;
     background-color: transparent;
     border-bottom: 0.08em solid black;
     text-align: center;
-    margin: 0 2em;
-    padding: 0.5em;
-    font-size: 1.3em;
+    margin: 1em auto 0;
+    padding: 0.3em;
+    font-size: clamp(0.7em, 2vw, 1.3em);
 }
 
-.form-fillup input::placeholder {
+.form-fillup input[name="dish-name"]::placeholder {
     text-transform: uppercase;
 }
 
-.form-fillup .textboxes {
-    height: 82%;
-    display: flex;
+.form-fillup h4 {
+    font-size: clamp(0.6em, 2vw, 1em);
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
 }
 
 .form-fillup textarea {
     resize: none;
-    border: none;
-    flex: 1;
+    border: 0.09em solid black;
+    height: 80vw;
+    max-height: 38rem;
+    overflow-y: scroll;
+    font-size: clamp(0.6em, 2vw, 1em);
 }
 
-.form-fillup textarea:nth-child(1) {
-    border-right: 1px solid black;
-}
-
-.form-fillup textarea:nth-child(2) {
-    border-left: 1px solid black;
-}
-
-.form-fillup button {
+.form-fillup button[type="submit"] {
     display: block;
     margin: 1em auto 0;
+    text-transform: uppercase;
+    padding: 0.5em 3em;
+    font-size: clamp(0.6em, 2vw, 0.8em);
+    font-weight: bold;
+    letter-spacing: 0.1em;
 }
