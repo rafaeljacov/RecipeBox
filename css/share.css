@@ -1,3 +1,20 @@
+#modal {
+    margin-top: 1.6em;
+    background-color: #FC7562;
+}
+
+#modal::backdrop {
+    background-color: rgb(0 0 0 / 0.3);
+}
+
+#modal-close {
+    transition: 0.2s ease-in;
+}
+
+#modal-close:hover  {
+    transform: scale(110%);
+}
+
 .share {
     flex: 3;
     background: whitesmoke;
@@ -15,6 +32,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.share img {
+    width: 100%;
 }
 
 #img-getter label {

@@ -8,14 +8,18 @@
 </head>
 
 <body>
-    <form id="swap" onsubmit="return false" class="share rounded-2 p-4">
+    <form id="swap" onsubmit="return false" class="share rounded-2 p-2 p-sm-4">
+        <dialog id="modal" class="rounded-3">
+            <i class="fa-solid fa-triangle-exclamation me-2"></i>Image File Type Not Supported!<i id="modal-close" class="fa-regular fa-circle-xmark btn"></i>
+        </dialog>
         <h3>share your personal recipe</h3>
         <div class="d-flex w-100 h-100">
             <div id="img-getter" class="text-center p-4 mt-3">
                 <label for="file" class="btn btn-secondary">insert dish photo here</label>
-                <input id="file" class="d-none" type="file" name="get-image" accept="image/jpeg, image/png, image/webp"
-                    value="">
+                <input id="file" class="d-none" onchange="verifyType()" type="file" name="get-image"
+                    accept="image/jpeg, image/png, image/webp" value="">
             </div>
+            <img class="d-none rounded-3" src="">
             <div class="form-fillup">
                 <input type="text" autocomplete="off" name="dish-name" placeholder="dish or recipe name" value="">
                 <h4 class="mt-4 bg-secondary rounded-1 p-2">ingredients and procedures</h4>
@@ -24,7 +28,7 @@
             </div>
         </div>
     </form>
-    <script src="share.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
