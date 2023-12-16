@@ -265,20 +265,7 @@
         crossorigin="anonymous"></script>
     <!-- Required for Fontawesome Icons -->
     <script src="https://kit.fontawesome.com/3f41037839.js" crossorigin="anonymous"></script>
-
-    <script>
-        // Toggle Disable Class for Button
-        const buttons = document.querySelectorAll(".menu button");
-        buttons[0].addEventListener('click', function () {
-            this.toggleAttribute('disabled');
-            buttons[1].toggleAttribute('disabled');
-        })
-
-        buttons[1].addEventListener('click', function () {
-            this.toggleAttribute('disabled');
-            buttons[0].toggleAttribute('disabled');
-        })
-    </script>
+    <script src="menu.js"></script>
 </body>
 
 </html>
