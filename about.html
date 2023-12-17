@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>About Us</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/about.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <!-- Required for Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Required for HTMX -->
+    <script src="https://unpkg.com/htmx.org@1.9.9"
+        integrity="sha384-QFjmbokDn2DjBjq+fM+8LUIVrAgqcNW2s0PjAxHETgRn9l4fvX31ZxDxvwQnyMOX"
+        crossorigin="anonymous"></script>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid text-center">
+                <a class="navbar-brand" href="#">
+                    Logo RecipeBox
+                </a>
+                <button style="padding: 0.1em 0.3em" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" style="width: 1.5rem"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav me-5">
+                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="recipes.html">Recipes</a>
+                        <a class="nav-link disabled" href="#">About</a>
+                    </div>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Global Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit"><i
+                                class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="hero container-fluid px-xl-4 position-relative">
+        <section class="about">
+            <h1 class="text-uppercase">about recipebox</h1>
+            <p class="about-text p-4 p-md-5">
+                Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi
+                Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit
+                nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud
+                officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia
+                dolor Lorem duis laboris nt cupidatat ullamco ut ea consectetur et est culpa et culpa duis.
+            </p>
+        </section>
+        <img src="https://placehold.co/1100x1300" alt="">
+        <section class="follow">
+            <h2 class="text-capitalize">follow us</h2>
+            <ul class="nav d-flex justify-content-between">
+                <li class="nav-item">
+                    <a href="" class="nav-link"><i class="fa-brands fa-instagram fs-1" style="color: #1e3050;"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link"><i class="fa-brands fa-facebook fs-1" style="color: #1e3050;"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link"><i class="fa-brands fa-twitter fs-1" style="color: #1e3050;"></i></a>
+                </li>
+            </ul>
+        </section>
+    </div>
+    <div class="horizontal mt-5 rounded-3"></div>
+    <section class="team container-fluid">
+        <h2 class="text-center text-capitalize mt-4">our team</h2>
+        <p class="team-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+            deserunt mollit anim id est laborum.
+        </p>
+        <div id="persons">
+            <div class="person mt-5">
+                <img class="img-fluid rounded-circle" src="https://placehold.co/200" alt="">
+                <div class="person-info">
+                    <h3>rafael</h3>
+                    <span class="hr-span rounded-3"></span>
+                    <p>Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur
+                        cupidatat.</p>
+                </div>
+            </div>
+            <div class="person mt-5">
+                <img class="img-fluid rounded-circle" src="https://placehold.co/200" alt="">
+                <div class="person-info">
+                    <h3>estelle</h3>
+                    <span class="hr-span rounded-3"></span>
+                    <p>Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur
+                    cupidatat.</p>
+                </div>
+            </div>
+            <div class="person mt-5">
+                <img class="img-fluid rounded-circle" src="https://placehold.co/200" alt="">
+                <div class="person-info">
+                    <h3>lorence</h3>
+                    <span class="hr-span rounded-3"></span>
+                    <p>Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur
+                        cupidatat.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="horizontal mt-5 rounded-3"></div>
+    <section class="contact container-fluid">
+        <h2 class="text-center text-uppercase my-4">contact us</h2>
+        <form action="" class="d-flex flex-column flex-lg-row mb-5 px-sm-4">
+            <div class="box">
+                <label for="message">message</label>
+                <textarea class="rounded-1" name="" id="message"></textarea>
+            </div>
+            <div class="inputs">
+                <label for="name">name</label>
+                <input class="rounded-1" type="text">
+                <label for="email">email</label>
+                <input class="rounded-1" type="email" id="email">
+                <label for="number">contact number</label>
+                <input class="rounded-1" type="text" id="number">
+                <label for="address">address</label>
+                <input class="rounded-1" type="text" id="address">
+                <button style="padding: 0.5em 4em;" type="button" class="btn btn-sm btn-secondary">send</button>
+            </div>
+        </form>
+    </section>
+    <footer class="container-fluid text-uppercase text-center bg-body-secondary pt-3">
+        <div class="row mt-1 gy-4">
+            <div class="col-lg-6 order-2">
+                <h5 class="fs-6">recipebox</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-6">
+                <h5 class="fs-6">foods and recipes</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link footer-link">featured dish</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">quick and easy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">freezer meals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">popular</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr class="border border-secondary border-2 rounded-pill opacity-75">
+        <!-- ICONS -->
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a href="" class="nav-link"><i class="fa-brands fa-facebook fs-3" style="color: #1e3050;"></i></a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link"><i class="fa-brands fa-instagram fs-3" style="color: #1e3050;"></i></a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link"><i class="fa-brands fa-twitter fs-3" style="color: #1e3050;"></i></a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link"><i class="fa-regular fa-envelope fs-3" style="color: #1e3050;"></i></a>
+            </li>
+        </ul>
+        <p id="copyright">&copy; Copyright 2023 RecipeBox All Rights Reserved.</p>
+    </footer>
+    <!-- Required for Bootstrap 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!-- Required for Fontawesome Icons -->
+    <script src="https://kit.fontawesome.com/3f41037839.js" crossorigin="anonymous"></script>
+    <script src="menu.js"></script>
+</body>
+
+</html>
