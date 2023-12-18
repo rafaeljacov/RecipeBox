@@ -10,7 +10,7 @@
 }
 
 .hero img {
-    width: 1100px;
+    width: 1000px;
 }
 
 .about {
@@ -22,18 +22,17 @@
 
 .about h1 {
     font-weight: 700;
-    font-size: clamp(2rem, 8vw, 5.8em);
+    font-size: clamp(2rem, 8vw, 4.8em);
     text-align: center;
 }
 
 .about .about-text {
-    max-width: 53.7rem;
-    overflow-y: scroll;
+    max-width: 47rem;
     margin: 0 0 0 auto;
     background-color: whitesmoke;
     line-height: 1.6em;
     letter-spacing: 1.8px;
-    font-size: clamp(22px, 3vw, 1.3em);
+    font-size: clamp(22px, 3vw, 1em);
 
     /* Glassmorphism */
     background: rgba( 255, 255, 255, 0.4 );
@@ -46,12 +45,12 @@
 
 .follow {
     position: absolute;
-    right: 8%;
+    right: 10%;
     bottom: 12%;
 }
 
 .follow h2 {
-    font-size: clamp(1.7em, 10vw, 3.5em);
+    font-size: clamp(1.7em, 10vw, 3em);
     font-weight: 600;
 }
 
@@ -64,7 +63,7 @@
 }
 
 .team h2 {
-    font-size: clamp(2em, 10vw, 3.5em);
+    font-size: clamp(2em, 10vw, 3em);
     font-weight: 600;
 }
 
@@ -72,12 +71,13 @@
     text-align: justify;
     width: 80%;
     margin: 0 auto 5em;
-    font-size: clamp(20px, 3vw, 1.3em);
+    font-size: clamp(20px, 3vw, 1.15em);
     line-height: clamp(1.4rem, 4vw, 1.4em);
 }
 
 #persons {
     margin: 0 auto;
+    padding: 0 clamp(0.5em, 5vw, 3.5em);
 }
 
 #persons .person {
@@ -88,7 +88,7 @@
 }
 
 .person img {
-    width: clamp(160px, 15vw, 200px);
+    width: clamp(150px, 15vw, 160px);
 }
 
 #persons .person-info {
@@ -99,7 +99,7 @@
 .person-info h3 {
     text-transform: capitalize;
     font-weight: 600;
-    font-size: clamp(1.6em, 2vw, 2.3em)
+    font-size: clamp(1.6em, 2vw, 1.8em)
 }
 
 .person-info .hr-span {
@@ -115,7 +115,7 @@
 }
 
 .contact h2 {
-    font-size: clamp(1.7em, 10vw, 3em);
+    font-size: clamp(1.7em, 10vw, 2em);
     font-weight: 600;
 }
 
@@ -140,7 +140,7 @@
 .contact label {
    display: block;
    font-weight: 600;
-   font-size: clamp(0.85em, 2vw, 1em);
+   font-size: clamp(0.70em, 2vw, 0.85em);
    margin-bottom: 0.5em;
    text-transform: uppercase;
 }
