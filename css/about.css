@@ -158,6 +158,10 @@
    border: 2px solid black;
 }
 
+.inputs input, #message {
+    font-size: clamp(0.75em, 2vw, 1em);
+}
+
 .inputs button {
     display: block;
     margin: 0 auto;
